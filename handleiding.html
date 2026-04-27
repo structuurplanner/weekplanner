@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Weekplanner — Handleiding</title>
+<style>
+:root{
+  --bg:#1c1f2e;--card:#252839;--card2:#2e3248;
+  --accent:#4f8ef7;--green:#3ecf8e;--yellow:#f5d020;--orange:#f5a623;--red:#f75454;
+  --text:#f0f2ff;--muted:#b0b8d0;--border:#3a3f5a;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Georgia',serif;min-height:100vh;padding:16px 16px 80px;max-width:640px;margin:0 auto;line-height:1.65;}
+h1{font-size:1.5rem;color:var(--accent);margin-bottom:4px;margin-top:24px;}
+h2{font-size:1.1rem;color:var(--accent);margin-bottom:8px;margin-top:28px;border-bottom:1px solid var(--border);padding-bottom:6px;}
+h3{font-size:.95rem;color:var(--yellow);margin-bottom:6px;margin-top:16px;}
+p{margin-bottom:10px;font-size:.92rem;}
+.intro{font-size:1rem;color:var(--muted);margin-bottom:20px;}
+.stap{background:var(--card);border-radius:12px;padding:13px 15px;margin-bottom:8px;border-left:4px solid var(--accent);}
+.stap-nr{font-size:.7rem;color:var(--accent);font-weight:bold;letter-spacing:1px;text-transform:uppercase;margin-bottom:3px;}
+.tip{background:var(--card2);border-radius:10px;padding:11px 13px;margin-bottom:10px;border-left:4px solid var(--green);font-size:.85rem;color:var(--muted);}
+.tip strong{color:var(--green);}
+.let-op{background:var(--card2);border-radius:10px;padding:11px 13px;margin-bottom:10px;border-left:4px solid var(--orange);font-size:.85rem;color:var(--muted);}
+.let-op strong{color:var(--orange);}
+.kleur-rij{display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;}
+.kleur-bol{width:18px;height:18px;border-radius:50%;flex-shrink:0;margin-top:3px;}
+.kleur-tekst strong{display:block;font-size:.9rem;color:var(--text);}
+.kleur-tekst span{font-size:.82rem;color:var(--muted);}
+ul{padding-left:18px;margin-bottom:10px;}
+li{margin-bottom:5px;font-size:.9rem;}
+.sectie{margin-bottom:28px;}
+hr{border:none;border-top:1px solid var(--border);margin:20px 0;}
+#terug{position:fixed;bottom:16px;right:16px;background:var(--accent);color:#fff;border:none;border-radius:50px;padding:10px 18px;font-size:.85rem;cursor:pointer;font-family:inherit;box-shadow:0 4px 15px rgba(79,142,247,.4);}
+.knop{display:inline-block;background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:3px 10px;font-size:.8rem;color:var(--text);margin:0 2px;}
+.knop-groen{background:#1a3d2e;border-color:var(--green);color:var(--green);}
+</style>
+</head>
+<body>
+
+<h1>📅 Weekplanner — Handleiding</h1>
+<p class="intro">Welkom bij de Weekplanner. Deze handleiding legt alles uit van begin tot eind. Lees hem rustig door. Je hoeft niet alles in één keer te onthouden — kom hier terug als je iets wil nalezen.</p>
+
+<hr>
+
+<div class="sectie">
+<h2>Wat is de Weekplanner?</h2>
+<p>De Weekplanner helpt je om je dag en week overzichtelijk te houden. Je ziet precies welke taken je hebt, hoe laat ze beginnen en eindigen, en hoe zwaar ze zijn. Je kunt taken afvinken als je ze gedaan hebt.</p>
+<p>De app werkt op telefoon, tablet en computer — zonder iets te installeren. Je opent hem gewoon in de browser Chrome via het webadres. Als je inlogt met je Google account worden je gegevens automatisch gesynchroniseerd tussen al je apparaten.</p>
+</div>
+
+<div class="sectie">
+<h2>De app openen</h2>
+
+<h3>Op telefoon of tablet (Android)</h3>
+<p>Open Chrome en ga naar het adres van de Weekplanner. Je kunt dit adres opslaan als bladwijzer zodat je hem makkelijk terugvindt.</p>
+
+<h3>Op de computer</h3>
+<p>Open Chrome op je computer en ga naar het volgende adres:</p>
+<p style="background:var(--card2);border-radius:8px;padding:10px 14px;font-family:monospace;font-size:.85rem;word-break:break-all;color:var(--accent);">structuurplanner.github.io/weekplanner/index-v2.html</p>
+<p>De app werkt precies hetzelfde als op je telefoon. Log in met je Google account en je ziet meteen je eigen schema.</p>
+
+<div class="tip"><strong>Tip:</strong> Sla het adres op als bladwijzer op elk apparaat. Dan open je de app in één tik.</div>
+</div>
+
+<div class="sectie">
+<h2>Eerste keer — de pincode instellen</h2>
+<p>De Instellingen zijn beveiligd met een pincode. De eerste keer dat je op de knop <span class="knop">⚙️ Instellingen</span> tikt, word je gevraagd een pincode te kiezen.</p>
+<div class="stap">
+<div class="stap-nr">Stap 1</div>
+<p>Tik op <span class="knop">⚙️ Instellingen</span> rechts bovenin.</p>
+</div>
+<div class="stap">
+<div class="stap-nr">Stap 2</div>
+<p>Er verschijnt een scherm met cijfertoetsen. Kies 4 cijfers als pincode.</p>
+</div>
+<div class="stap">
+<div class="stap-nr">Stap 3</div>
+<p>Voer de pincode nogmaals in ter bevestiging.</p>
+</div>
+<div class="stap">
+<div class="stap-nr">Klaar</div>
+<p>De pincode is ingesteld. Voortaan moet je hem invoeren om bij de instellingen te komen.</p>
+</div>
+<div class="let-op"><strong>Pincode vergeten?</strong> Op het pincode invoerscherm staat onderaan de knop <strong>Pincode vergeten? Reset via Google account</strong>. Als je ingelogd bent kun je daarmee de pincode verwijderen en een nieuwe instellen.</div>
+</div>
+
+<div class="sectie">
+<h2>Inloggen</h2>
+<div class="stap">
+<div class="stap-nr">Stap 1</div>
+<p>Open de app in Chrome. Rechtsboven zie je een groene knop <span class="knop knop-groen">🔑 Inloggen</span>. Tik daarop.</p>
+</div>
+<div class="stap">
+<div class="stap-nr">Stap 2</div>
+<p>Er verschijnt een Google scherm. Kies je Google account.</p>
+</div>
+<div class="stap">
+<div class="stap-nr">Stap 3</div>
+<p>Je bent ingelogd. Je naam verschijnt rechtsboven. De app onthoudt dit — de volgende keer log je automatisch in.</p>
+</div>
+<div class="tip"><strong>Tip:</strong> Gebruik je de app op meerdere apparaten? Log overal in met hetzelfde Google account. Dan staat overal hetzelfde schema en worden vinkjes en aanpassingen automatisch gesynchroniseerd.</div>
+</div>
+
+<div class="sectie">
+<h2>Uitloggen en van account wisselen</h2>
+<p>Rechtsboven zie je als je ingelogd bent twee knoppen:</p>
+<ul>
+<li><span class="knop">Uitloggen</span> — je wordt uitgelogd.</li>
+<li><span class="knop">Wissel account</span> — je wordt uitgelogd en kunt meteen een ander Google account kiezen. Handig als meerdere mensen de app gebruiken op hetzelfde apparaat — bijvoorbeeld een ouder die voor meerdere kinderen het schema beheert.</li>
+</ul>
+</div>
+
+<div class="sectie">
+<h2>Het scherm begrijpen</h2>
+
+<h3>Links bovenin — klok en datum</h3>
+<p>Links zie je een grote digitale klok die de huidige tijd toont, en daaronder de datum van vandaag.</p>
+
+<h3>De drie grote navigatieknoppen</h3>
+<p>Rechts bovenin staan drie grote knoppen. De knop waar je nu bent is blauw gekleurd:</p>
+<ul>
+<li><span class="knop">Nu bezig</span> — laat de taak zien die op dit moment bezig is, plus welke taak daarna komt</li>
+<li><span class="knop">Dag</span> — laat alle taken van één dag zien</li>
+<li><span class="knop">Week</span> — laat een overzicht van alle zeven dagen zien</li>
+</ul>
+
+<h3>Dag wisselen</h3>
+<p>Onder de knoppen zie je de dagen van de week als kleine tabs. Tik op een dag om die dag te bekijken. Vandaag is groen gemarkeerd met een puntje. Staat er een feestdag? Dan zie je dat ook bij de tab van die dag zodat je er rekening mee kunt houden.</p>
+
+<h3>Week wisselen</h3>
+<p>Onder de dagtabs staan de knoppen <span class="knop">◀ Vorige</span>, <span class="knop">Vandaag</span> en <span class="knop">Volgende ▶</span>. Daarmee navigeer je naar een andere week. <strong>Vandaag</strong> brengt je altijd terug naar de huidige week.</p>
+
+<h3>Terug knop</h3>
+<p>De knop <span class="knop">📅 Terug</span> laat je vorige weken bekijken. Zo kun je zien wat je eerder gedaan hebt.</p>
+</div>
+
+<div class="sectie">
+<h2>Dagweergave — wat zie je?</h2>
+
+<h3>Belastingsbalk bovenaan</h3>
+<p>Bovenaan elke dag zie je een gekleurde balk. Die laat zien hoe zwaar de dag in totaal is — groen is rustig, rood is zwaar. Dit helpt bij het eerlijk verdelen van taken over de week zodat niet alle zware taken op één dag vallen.</p>
+
+<h3>De taken</h3>
+<p>Elke taak toont de begintijd, eindtijd en naam. Aan de linkerkant staat een gekleurde streep die de zwaarte aangeeft. Rechts staat een ℹ knopje voor meer uitleg.</p>
+
+<h3>Tijdsbalk in een taak</h3>
+<p>Bij de taak die nu bezig is zie je een gekleurde balk die langzaam volloopt van links naar rechts. Zo zie je in één oogopslag hoeveel tijd er al verstreken is en hoeveel er nog over is.</p>
+
+<h3>Ruimte tussen taken</h3>
+<p>Als er vrije tijd zit tussen twee taken zie je een lege ruimte. Hoe groter de ruimte, hoe meer vrije tijd er is. Zo zie je direct wanneer je even geen taak hebt.</p>
+
+<h3>Automatisch scrollen</h3>
+<p>De dagweergave scrollt automatisch naar de taak die op dit moment bezig is. Zo hoef je niet zelf te zoeken waar je bent.</p>
+</div>
+
+<div class="sectie">
+<h2>Nu bezig weergave</h2>
+<p>Tik op <span class="knop">Nu bezig</span> om de huidige taak groot te zien. Je ziet:</p>
+<ul>
+<li>De naam en tijd van de taak die nu bezig is</li>
+<li>Een tijdsbalk die laat zien hoeveel tijd er al voorbij is</li>
+<li>Welke taak daarna komt</li>
+</ul>
+</div>
+
+<div class="sectie">
+<h2>Weekweergave</h2>
+<p>Tik op <span class="knop">Week</span> voor het weekoverzicht. Je ziet alle zeven dagen.</p>
+<ul>
+<li>Tik op een dag om hem open te klappen en de taken te zien</li>
+<li>Tik nogmaals op de dag om hem weer dicht te klappen</li>
+<li>Als je alle dagen dicht klapt zie je aan de rechterkant van elke dag de kleurbolletjes — zo zie je in één oogopslag hoe de zwaarte over de week verdeeld is</li>
+</ul>
+</div>
+
+<div class="sectie">
+<h2>Taken afvinken</h2>
+<p>Tik op een taak om hem af te vinken. De taak wordt doorgestreept en vager. Tik nogmaals om het vinkje ongedaan te maken.</p>
+<p>Is een taak al voorbij maar heb je hem nog niet afgevinkt? Geen probleem — je kunt een taak altijd nog afvinken, ook als de tijd al voorbij is. En andersom: is een taak al afgevinkt maar wil je hem toch nog doen? Tik hem opnieuw aan om het vinkje te verwijderen.</p>
+<div class="tip"><strong>Automatisch nieuwe week:</strong> Elke week beginnen de vinkjes automatisch leeg. Je hoeft dat niet zelf te doen.</div>
+</div>
+
+<div class="sectie">
+<h2>De kleuren — wat betekenen ze?</h2>
+<p>Elke taak heeft een gekleurde streep aan de linkerkant. Die kleur laat zien hoeveel energie de taak kost.</p>
+<div class="kleur-rij">
+  <div class="kleur-bol" style="background:#3ecf8e;"></div>
+  <div class="kleur-tekst"><strong>Groen — Licht</strong><span>Gaat vanzelf, kost weinig energie</span></div>
+</div>
+<div class="kleur-rij">
+  <div class="kleur-bol" style="background:#f5d020;"></div>
+  <div class="kleur-tekst"><strong>Geel — Middel</strong><span>Kost wat moeite maar lukt</span></div>
+</div>
+<div class="kleur-rij">
+  <div class="kleur-bol" style="background:#f5a623;"></div>
+  <div class="kleur-tekst"><strong>Oranje — Zwaar</strong><span>Vraagt behoorlijk wat energie</span></div>
+</div>
+<div class="kleur-rij">
+  <div class="kleur-bol" style="background:#f75454;"></div>
+  <div class="kleur-tekst"><strong>Rood — Heel zwaar</strong><span>Vraagt veel energie — plan rust erna</span></div>
+</div>
+<p>Je kunt de legenda ook altijd openen via de knop <span class="knop">Legenda</span> rechts bovenin.</p>
+<p>Merk je na een tijdje dat een taak toch zwaarder of lichter is dan gedacht? Via <span class="knop">⚙️ Instellingen</span> → <strong>Schema aanpassen</strong> kun je de kleur aanpassen.</p>
+</div>
+
+<div class="sectie">
+<h2>Uitleg bij een taak — de ℹ knop</h2>
+<p>Rechts op elke taakbalk staat een klein <strong>ℹ</strong> knopje. Als je daarop tikt zie je meer informatie over die taak — wat de taak precies inhoudt en hoe zwaar hij is.</p>
+<p>De uitleg wordt ingevuld door degene die het schema heeft gemaakt. Als er geen uitleg is staat er een berichtje dat er nog niets is ingevuld.</p>
+</div>
+
+<div class="sectie">
+<h2>Stippellijn om een taak</h2>
+<p>Soms zie je een stippellijn om een taak. Dat betekent dat die taak <strong>tijdelijk</strong> is toegevoegd of aangepast — alleen voor deze week. De week erna gaat het schema automatisch terug naar normaal.</p>
+</div>
+
+<div class="sectie">
+<h2>Instellingen — wat staat er in?</h2>
+<p>De knop <span class="knop">⚙️ Instellingen</span> rechts bovenin is beveiligd met een pincode. Zo kan niemand per ongeluk iets veranderen.</p>
+<p>In de instellingen vind je:</p>
+<ul>
+<li><strong>Taakmeldingen</strong> — meldingen aan of uit zetten, en wanneer</li>
+<li><strong>Schema aanpassen</strong> — taken toevoegen, wijzigen of verwijderen</li>
+<li><strong>PDF opslaan</strong> — dag of week als PDF exporteren</li>
+<li><strong>Leegmaken</strong> — vinkjes wissen of alles wissen</li>
+<li><strong>Begeleiders</strong> — toegang beheren</li>
+</ul>
+<div class="tip"><strong>Pincode vergeten?</strong> Op het pincode invoerscherm staat onderaan <strong>Pincode vergeten? Reset via Google account</strong>. Als je ingelogd bent kun je daarmee de pincode verwijderen en een nieuwe instellen.</div>
+</div>
+
+<div class="sectie">
+<h2>Meldingen instellen</h2>
+<p>De app kan je een melding geven als een taak bijna begint. Je ziet dan een blauwe balk bovenaan het scherm met een geluidje.</p>
+
+<div class="stap">
+<div class="stap-nr">Stap 1</div>
+<p>Tik op <span class="knop">⚙️ Instellingen</span> en voer je pincode in.</p>
+</div>
+<div class="stap">
+<div class="stap-nr">Stap 2</div>
+<p>Onder <strong>Taakmeldingen</strong> zet je de schakelaar aan.</p>
+</div>
+<div class="stap">
+<div class="stap-nr">Stap 3</div>
+<p>Kies wanneer je een melding wil:</p>
+<ul>
+<li><strong>10 minuten van tevoren</strong> — handig om je voor te bereiden</li>
+<li><strong>Precies op tijd</strong> — melding op het moment dat de taak begint</li>
+<li><strong>Beide</strong> — eerst een waarschuwing op 10 minuten, daarna een startsein</li>
+</ul>
+</div>
+<div class="stap">
+<div class="stap-nr">Testen</div>
+<p>Tik op <strong>🔔 Test melding nu</strong> om te controleren of de melding werkt op jouw apparaat.</p>
+</div>
+<div class="let-op"><strong>Let op:</strong> De melding werkt alleen als de app open staat in Chrome. Als je Chrome helemaal sluit komen er geen meldingen.</div>
+</div>
+
+<div class="sectie">
+<h2>Het schema aanpassen</h2>
+<p>Via <span class="knop">⚙️ Instellingen</span> → <strong>Schema aanpassen</strong> kun je taken toevoegen, wijzigen of verwijderen.</p>
+<p>Je kunt meerdere dingen aanpassen — op verschillende dagen — en ze daarna allemaal tegelijk opslaan. De instellingen sluiten pas als je op <strong>Volgende: opslaan →</strong> tikt en een keuze maakt.</p>
+
+<h3>Vast opslaan</h3>
+<p>De aanpassing geldt voortaan altijd, elke week. Gebruik dit als iets structureel verandert.</p>
+
+<h3>Alleen deze week — tijdelijk</h3>
+<p>De aanpassing geldt alleen voor de huidige week. De week erna gaat het schema automatisch terug naar normaal. Tijdelijk toegevoegde taken krijgen een stippellijn.</p>
+
+<div class="tip"><strong>Tip:</strong> Ga je iets bijzonders doen — een uitje, afspraak of vrije dag? Gebruik dan "Alleen deze week". Zo blijft je vaste schema intact.</div>
+
+<h3>Een taak toevoegen</h3>
+<div class="stap">
+<div class="stap-nr">Stap 1</div>
+<p>Tik op <strong>+ Taak toevoegen</strong> onderaan een dag.</p>
+</div>
+<div class="stap">
+<div class="stap-nr">Stap 2</div>
+<p>Vul in: begintijd, eindtijd en naam van de taak.</p>
+</div>
+<div class="stap">
+<div class="stap-nr">Stap 3</div>
+<p>Kies een categorie. Kies je "anders"? Dan verschijnt er een extra veld om zelf in te vullen wat het is.</p>
+</div>
+<div class="stap">
+<div class="stap-nr">Stap 4</div>
+<p>Kies een kleur voor de zwaarte — groen, geel, oranje of rood.</p>
+</div>
+<div class="stap">
+<div class="stap-nr">Stap 5 (optioneel)</div>
+<p>Vul een uitleg in. Die tekst zie je als je op het ℹ knopje tikt.</p>
+</div>
+<div class="stap">
+<div class="stap-nr">Stap 6</div>
+<p>Tik onderaan op <strong>Volgende: opslaan →</strong> en kies vast of alleen deze week.</p>
+</div>
+
+<h3>Kleur of uitleg aanpassen</h3>
+<p>Merk je dat een taak toch zwaarder of lichter is dan je dacht? Ga naar <strong>Schema aanpassen</strong>, tik op de taak en verander de kleur. Zo blijft het schema eerlijk en realistisch.</p>
+
+<h3>Een taak verwijderen</h3>
+<p>Tik op het rode <strong>✕</strong> knopje rechts van de taak.</p>
+
+<h3>Categorieën</h3>
+<ul>
+<li><strong>was</strong> — was doen</li>
+<li><strong>vaat</strong> — afwassen</li>
+<li><strong>koken</strong> — eten klaarmaken</li>
+<li><strong>schoon</strong> — schoonmaken</li>
+<li><strong>vuilnis</strong> — vuilnis buiten zetten</li>
+<li><strong>boodschappen</strong> — inkopen doen</li>
+<li><strong>admin</strong> — papierwerk, post, mail</li>
+<li><strong>geld</strong> — financiën, rekeningen</li>
+<li><strong>begeleiding</strong> — afspraak met begeleider</li>
+<li><strong>uitzoeken</strong> — iets uitzoeken of regelen</li>
+<li><strong>rust</strong> — pauze of rustmoment</li>
+<li><strong>sport</strong> — bewegen, sporten</li>
+<li><strong>werk</strong> — werktaken</li>
+<li><strong>anders</strong> — iets anders, jij vult zelf in wat</li>
+</ul>
+</div>
+
+<div class="sectie">
+<h2>Tijdelijke aanpassingen verwijderen</h2>
+<p>Heb je taken tijdelijk toegevoegd en wil je sommige weer terugzetten naar het vaste schema? Dat doe je via <span class="knop">⚙️ Instellingen</span> → <strong>Tijdelijke aanpassingen</strong>.</p>
+<p>Je ziet een lijst van alle tijdelijk toegevoegde taken van de huidige week, gesorteerd per dag. Elke taak heeft een vinkje — standaard zijn ze allemaal aangevinkt. Verwijder het vinkje van taken die je wil behouden, en tik dan op <strong>Geselecteerde verwijderen</strong>. Alleen de aangevinkte taken worden verwijderd.</p>
+<p>De taken die je behoudt blijven gewoon staan met hun stippellijn tot het einde van de week.</p>
+<div class="tip"><strong>Let op:</strong> Dit is beveiligd met de pincode. Zo kan niemand per ongeluk de tijdelijke aanpassingen weggooien die een ouder of begeleider zorgvuldig heeft ingepland.</div>
+</div>
+
+<div class="sectie">
+<h2>Vinkjes wissen en opnieuw beginnen</h2>
+<p>Via <span class="knop">⚙️ Instellingen</span> → <strong>Leegmaken</strong> kun je:</p>
+<ul>
+<li><strong>Vinkjes wissen</strong> — alle afgevinkte taken van de hele week worden in één keer gewist. Normaal gaat dit automatisch aan het begin van elke nieuwe week, maar je kunt het ook handmatig doen.</li>
+<li><strong>Alles wissen — blanco start</strong> — het hele schema wordt gewist. Gebruik dit als je de app overdraagt aan iemand anders of helemaal opnieuw wil beginnen.</li>
+</ul>
+<div class="tip"><strong>Automatisch:</strong> Elke week beginnen de vinkjes automatisch leeg voor de hele week. Je hoeft dat niet zelf te doen.</div>
+</div>
+
+<div class="sectie">
+<h2>PDF opslaan of afdrukken</h2>
+<p>Via <span class="knop">⚙️ Instellingen</span> → <strong>PDF opslaan</strong>:</p>
+<ul>
+<li><strong>Dag als PDF</strong> — de taken van de geselecteerde dag</li>
+<li><strong>Week als PDF</strong> — alle taken van de hele week op één pagina</li>
+</ul>
+</div>
+
+<div class="sectie">
+<h2>Begeleider toegang</h2>
+<p>Een begeleider of ouder kan meekijken in jouw schema — maar alleen als jij daarvoor toestemming geeft.</p>
+
+<h3>Als je een verzoek krijgt</h3>
+<p>Als een begeleider toegang wil, verschijnt er automatisch een scherm zodra je de app opent. Je kiest:</p>
+<ul>
+<li><strong>Meekijken — altijd</strong></li>
+<li><strong>Meekijken — alleen nu</strong></li>
+<li><strong>Meekijken + aanpassen — altijd</strong> — de begeleider mag wijzigingen voorstellen</li>
+<li><strong>Meekijken + aanpassen — alleen nu</strong></li>
+<li><strong>Weigeren</strong></li>
+</ul>
+<div class="tip"><strong>Belangrijk:</strong> Als een begeleider een aanpassing voorstelt, beslis jij zelf of je het goedkeurt of afwijst. Er verandert nooit iets zonder jouw toestemming.</div>
+
+<h3>Begeleider uitnodigen</h3>
+<p>Ga naar <span class="knop">⚙️ Instellingen</span> → <strong>Begeleiders</strong> → <strong>Begeleider uitnodigen</strong>. Vul het e-mailadres in en kies het toegangsniveau.</p>
+
+<h3>Toegang intrekken</h3>
+<p>Via <span class="knop">⚙️ Instellingen</span> → <strong>Begeleiders</strong> zie je wie toegang heeft. Tik op <strong>Toegang intrekken</strong> om iemand te verwijderen.</p>
+</div>
+
+<div class="sectie">
+<h2>Werkt iets niet?</h2>
+<ul>
+<li>Ververs de pagina door op het rondje in Chrome te tikken</li>
+<li>Log uit en log opnieuw in</li>
+<li>Controleer of je internetverbinding werkt</li>
+<li>Werkt de melding niet? Controleer of de app open staat in Chrome</li>
+</ul>
+</div>
+
+<button id="terug" onclick="window.close()">✕ Sluiten</button>
+
+</body>
+</html>
